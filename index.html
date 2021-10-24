@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="Survey Form" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- HERE WILL BE THE TITLE AND SUBTITLE -->
+
+    <div class="formatBody">
+      <!-- HERE WILL BE THE title and subtitle -->
+      <h1 id="title">Workout Survey Form</h1>
+      <hr />
+      <p id="description">Make progress, achieve your goals</p>
+
+      <div>
+        <form id="survey-form">
+          <label for="name" id="name-label">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            placeholder=" enter your name"
+            value=""
+            required
+          />
+          <br />
+          <br />
+          <label for="email" id="email-label">E-mail</label><br />
+          <input
+            type="email"
+            id="email"
+            placeholder=" enter your e-mail"
+            value=""
+            required
+          />
+          <br />
+          <br />
+          <label for="number" id="number-label">What is your age?</label><br />
+          <input
+            type="number"
+            id="number"
+            min="1"
+            max="99"
+            placeholder="age"
+            value=""
+            required
+          />
+          <br />
+          <br />
+          <label for="dropdown">Would you recommend our services</label><br />
+          <select id="dropdown">
+            <option value="Yes, I recommend">Yes, I recommend</option>
+            <option value="I am not sure">I am not sure</option>
+            <option value="No comments">No, I do not recommend</option>
+          </select>
+          <br />
+          <br />
+          <p >
+            How many times in a week do you practice physical <br/><br/><br/>
+            exercises ?
+          </p>       
+          <label for="any"><input type="radio" id="any" name="attribute" value="any"> Any</label>
+          <br />
+          <label for="oneTime"><input type="radio" id="oneTime" name="attribute" value="oneTime"> Once a week</label>
+          <br />          
+          <label for="twoTimes"><input type="radio" id="twoTimes" name="attribute" value="twoTimes"> twice a week</label>
+          <br />
+          <label for="threeTimes"><input type="radio" id="threeTimes" name="attribute" value="threeTimes"> More than 3 times a week </label>
+          <br>
+          <p>Which location do you prefer to practice exercises?</p>
+          <br>
+          <label for="preference_location"><input type="checkbox" id="preference_location" name="outdoors_location" value="a"> Outdoors</label>
+          <br>          
+          <label for="preference_location"><input type="checkbox" id="preference_location" name="indoors_location" value="a"> Indoors</label>
+          <br>
+          <p>In your opinion what would you do to improve your <br><br><br>health?</p>
+          <br> 
+          <label for="comment"></label>
+          <textarea rows="10" cols="40"></textarea>
+          <br>
+          <br>
+          <input id="submit" type="submit" value="Submit your form">
+
+                 
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
+</html>
